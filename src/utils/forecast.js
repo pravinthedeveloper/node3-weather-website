@@ -12,7 +12,8 @@ const forecast = (lat, long, callback) => {
                 location: body.location.name + ', ' + body.location.country,
                 weather: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                uvindex: body.current.uv_index
             })
         }
     })
